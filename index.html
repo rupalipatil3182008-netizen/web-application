@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        /* Navbar */
+        header {
+            background: #1e3a8a;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #93c5fd;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            background: linear-gradient(135deg, #dbeafe, #eff6ff);
+        }
+
+        .hero-content {
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+
+        .btn-secondary {
+            border: 2px solid #2563eb;
+            color: #2563eb;
+        }
+
+        .btn-secondary:hover {
+            background: #2563eb;
+            color: white;
+        }
+
+        /* Illustration */
+        .hero-image {
+            width: 400px;
+            height: 300px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 32px;
+            color: #1e3a8a;
+            margin-bottom: 40px;
+        }
+
+        .feature-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .feature-card {
+            background: white;
+            width: 250px;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .feature-card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3a8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 40px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero-image {
+                width: 300px;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">📝 Online Exam</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#features">Features</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+            <h1>Online Exam System</h1>
+
+            <p>
+                Test your knowledge anytime, anywhere.
+                Take online examinations, view your results,
+                and improve your performance with our easy-to-use
+                examination platform.
+            </p>
+
+            <a href="login.html" class="btn btn-primary">
+                Start Exam
+            </a>
+
+            <a href="register.html" class="btn btn-secondary">
+                Register Now
+            </a>
+        </div>
+
+        <div class="hero-image">
+            📚
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features" id="features">
+
+        <h2>Our Features</h2>
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="icon">📝</div>
+                <h3>Online Exams</h3>
+                <p>
+                    Take exams online with a simple and
+                    user-friendly interface.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">⏱️</div>
+                <h3>Time Limit</h3>
+                <p>
+                    Complete your examination within
+                    the specified time.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">📊</div>
+                <h3>Instant Results</h3>
+                <p>
+                    Get your examination results immediately
+                    after submitting the test.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon">🔒</div>
+                <h3>Secure System</h3>
+                <p>
+                    Secure login and examination data
+                    management for students.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 Online Exam System. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
